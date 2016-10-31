@@ -20,5 +20,12 @@ public class HasilActivity extends AppCompatActivity {
                 startActivity(new Intent(HasilActivity.this, HasilActivity.class));
             }
         });
+
+        findViewById(R.id.buttonBack).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
     }
 }
